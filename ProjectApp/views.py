@@ -20,7 +20,7 @@ def prediction(request):
         
         arr=np.array([[TSH,FTI,TT4,T3,query_hypothyroid,on_thyroxine,sex,pregnant,psych]])
     
-        model=jb.load('ProjectApp\model_RandomForest.pkl')
+        model=jb.load('ProjectApp/model_RandomForest.pkl')
         
         
         result= model.predict(arr)
