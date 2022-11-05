@@ -25,6 +25,6 @@ def prediction(request):
         
         result= model.predict(arr)
         if result ==1:
-            return render(request,'after.html',{'data':'your value are abnormal and are have thyroid'})
+            return render(request,'after.html',{'data':'your values are abnormal and are have thyroid'})
         else :
-            return render(request,'after.html',{'data':'your value are normal '})
+            return render(request,'after.html',{'data':'your values are normal '})
